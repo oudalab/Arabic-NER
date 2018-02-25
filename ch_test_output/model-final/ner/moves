@@ -1,0 +1,800 @@
+Å´transitions⁄0^[
+  {
+    "clas":0,
+    "move":1,
+    "label":"ORG",
+    "name":"B-ORG"
+  },
+  {
+    "clas":1,
+    "move":1,
+    "label":"WORK_OF_ART",
+    "name":"B-WORK_OF_ART"
+  },
+  {
+    "clas":2,
+    "move":1,
+    "label":"DATE",
+    "name":"B-DATE"
+  },
+  {
+    "clas":3,
+    "move":1,
+    "label":"GPE",
+    "name":"B-GPE"
+  },
+  {
+    "clas":4,
+    "move":1,
+    "label":"EVENT",
+    "name":"B-EVENT"
+  },
+  {
+    "clas":5,
+    "move":1,
+    "label":"NORP",
+    "name":"B-NORP"
+  },
+  {
+    "clas":6,
+    "move":1,
+    "label":"PERSON",
+    "name":"B-PERSON"
+  },
+  {
+    "clas":7,
+    "move":1,
+    "label":"MONEY",
+    "name":"B-MONEY"
+  },
+  {
+    "clas":8,
+    "move":1,
+    "label":"CARDINAL",
+    "name":"B-CARDINAL"
+  },
+  {
+    "clas":9,
+    "move":1,
+    "label":"ORDINAL",
+    "name":"B-ORDINAL"
+  },
+  {
+    "clas":10,
+    "move":1,
+    "label":"TIME",
+    "name":"B-TIME"
+  },
+  {
+    "clas":11,
+    "move":1,
+    "label":"CARDINAL\" E_OFF=\"1",
+    "name":"B-CARDINAL\" E_OFF=\"1"
+  },
+  {
+    "clas":12,
+    "move":1,
+    "label":"LOC",
+    "name":"B-LOC"
+  },
+  {
+    "clas":13,
+    "move":1,
+    "label":"ORDINAL\" E_OFF=\"1",
+    "name":"B-ORDINAL\" E_OFF=\"1"
+  },
+  {
+    "clas":14,
+    "move":1,
+    "label":"QUANTITY",
+    "name":"B-QUANTITY"
+  },
+  {
+    "clas":15,
+    "move":1,
+    "label":"PERCENT",
+    "name":"B-PERCENT"
+  },
+  {
+    "clas":16,
+    "move":1,
+    "label":"FAC",
+    "name":"B-FAC"
+  },
+  {
+    "clas":17,
+    "move":1,
+    "label":"NORP\" E_OFF=\"1",
+    "name":"B-NORP\" E_OFF=\"1"
+  },
+  {
+    "clas":18,
+    "move":1,
+    "label":"LAW",
+    "name":"B-LAW"
+  },
+  {
+    "clas":19,
+    "move":1,
+    "label":"CARDINAL\" E_OFF=\"2",
+    "name":"B-CARDINAL\" E_OFF=\"2"
+  },
+  {
+    "clas":20,
+    "move":1,
+    "label":"WORK_OF_ART\" E_OFF=\"1",
+    "name":"B-WORK_OF_ART\" E_OFF=\"1"
+  },
+  {
+    "clas":21,
+    "move":1,
+    "label":"FAC\" S_OFF=\"1",
+    "name":"B-FAC\" S_OFF=\"1"
+  },
+  {
+    "clas":22,
+    "move":1,
+    "label":"QUANTITY\" S_OFF=\"2\" E_OFF=\"4",
+    "name":"B-QUANTITY\" S_OFF=\"2\" E_OFF=\"4"
+  },
+  {
+    "clas":23,
+    "move":1,
+    "label":"QUANTITY\" S_OFF=\"2",
+    "name":"B-QUANTITY\" S_OFF=\"2"
+  },
+  {
+    "clas":24,
+    "move":1,
+    "label":"GPE\" S_OFF=\"1",
+    "name":"B-GPE\" S_OFF=\"1"
+  },
+  {
+    "clas":25,
+    "move":1,
+    "label":"DATE\" E_OFF=\"1",
+    "name":"B-DATE\" E_OFF=\"1"
+  },
+  {
+    "clas":26,
+    "move":1,
+    "label":"EVENT\" E_OFF=\"1",
+    "name":"B-EVENT\" E_OFF=\"1"
+  },
+  {
+    "clas":27,
+    "move":1,
+    "label":"NORP\" S_OFF=\"1",
+    "name":"B-NORP\" S_OFF=\"1"
+  },
+  {
+    "clas":28,
+    "move":1,
+    "label":"LOC\" E_OFF=\"1",
+    "name":"B-LOC\" E_OFF=\"1"
+  },
+  {
+    "clas":29,
+    "move":1,
+    "label":"GPE\" E_OFF=\"1",
+    "name":"B-GPE\" E_OFF=\"1"
+  },
+  {
+    "clas":30,
+    "move":1,
+    "label":"LANGUAGE",
+    "name":"B-LANGUAGE"
+  },
+  {
+    "clas":31,
+    "move":1,
+    "label":"GPE\" E_OFF=\"2",
+    "name":"B-GPE\" E_OFF=\"2"
+  },
+  {
+    "clas":32,
+    "move":1,
+    "label":"ORG\" E_OFF=\"1",
+    "name":"B-ORG\" E_OFF=\"1"
+  },
+  {
+    "clas":33,
+    "move":2,
+    "label":"ORG",
+    "name":"I-ORG"
+  },
+  {
+    "clas":34,
+    "move":2,
+    "label":"WORK_OF_ART",
+    "name":"I-WORK_OF_ART"
+  },
+  {
+    "clas":35,
+    "move":2,
+    "label":"DATE",
+    "name":"I-DATE"
+  },
+  {
+    "clas":36,
+    "move":2,
+    "label":"GPE",
+    "name":"I-GPE"
+  },
+  {
+    "clas":37,
+    "move":2,
+    "label":"EVENT",
+    "name":"I-EVENT"
+  },
+  {
+    "clas":38,
+    "move":2,
+    "label":"NORP",
+    "name":"I-NORP"
+  },
+  {
+    "clas":39,
+    "move":2,
+    "label":"PERSON",
+    "name":"I-PERSON"
+  },
+  {
+    "clas":40,
+    "move":2,
+    "label":"MONEY",
+    "name":"I-MONEY"
+  },
+  {
+    "clas":41,
+    "move":2,
+    "label":"CARDINAL",
+    "name":"I-CARDINAL"
+  },
+  {
+    "clas":42,
+    "move":2,
+    "label":"ORDINAL",
+    "name":"I-ORDINAL"
+  },
+  {
+    "clas":43,
+    "move":2,
+    "label":"TIME",
+    "name":"I-TIME"
+  },
+  {
+    "clas":44,
+    "move":2,
+    "label":"CARDINAL\" E_OFF=\"1",
+    "name":"I-CARDINAL\" E_OFF=\"1"
+  },
+  {
+    "clas":45,
+    "move":2,
+    "label":"LOC",
+    "name":"I-LOC"
+  },
+  {
+    "clas":46,
+    "move":2,
+    "label":"ORDINAL\" E_OFF=\"1",
+    "name":"I-ORDINAL\" E_OFF=\"1"
+  },
+  {
+    "clas":47,
+    "move":2,
+    "label":"QUANTITY",
+    "name":"I-QUANTITY"
+  },
+  {
+    "clas":48,
+    "move":2,
+    "label":"PERCENT",
+    "name":"I-PERCENT"
+  },
+  {
+    "clas":49,
+    "move":2,
+    "label":"FAC",
+    "name":"I-FAC"
+  },
+  {
+    "clas":50,
+    "move":2,
+    "label":"NORP\" E_OFF=\"1",
+    "name":"I-NORP\" E_OFF=\"1"
+  },
+  {
+    "clas":51,
+    "move":2,
+    "label":"LAW",
+    "name":"I-LAW"
+  },
+  {
+    "clas":52,
+    "move":2,
+    "label":"CARDINAL\" E_OFF=\"2",
+    "name":"I-CARDINAL\" E_OFF=\"2"
+  },
+  {
+    "clas":53,
+    "move":2,
+    "label":"WORK_OF_ART\" E_OFF=\"1",
+    "name":"I-WORK_OF_ART\" E_OFF=\"1"
+  },
+  {
+    "clas":54,
+    "move":2,
+    "label":"FAC\" S_OFF=\"1",
+    "name":"I-FAC\" S_OFF=\"1"
+  },
+  {
+    "clas":55,
+    "move":2,
+    "label":"QUANTITY\" S_OFF=\"2\" E_OFF=\"4",
+    "name":"I-QUANTITY\" S_OFF=\"2\" E_OFF=\"4"
+  },
+  {
+    "clas":56,
+    "move":2,
+    "label":"QUANTITY\" S_OFF=\"2",
+    "name":"I-QUANTITY\" S_OFF=\"2"
+  },
+  {
+    "clas":57,
+    "move":2,
+    "label":"GPE\" S_OFF=\"1",
+    "name":"I-GPE\" S_OFF=\"1"
+  },
+  {
+    "clas":58,
+    "move":2,
+    "label":"DATE\" E_OFF=\"1",
+    "name":"I-DATE\" E_OFF=\"1"
+  },
+  {
+    "clas":59,
+    "move":2,
+    "label":"EVENT\" E_OFF=\"1",
+    "name":"I-EVENT\" E_OFF=\"1"
+  },
+  {
+    "clas":60,
+    "move":2,
+    "label":"NORP\" S_OFF=\"1",
+    "name":"I-NORP\" S_OFF=\"1"
+  },
+  {
+    "clas":61,
+    "move":2,
+    "label":"LOC\" E_OFF=\"1",
+    "name":"I-LOC\" E_OFF=\"1"
+  },
+  {
+    "clas":62,
+    "move":2,
+    "label":"GPE\" E_OFF=\"1",
+    "name":"I-GPE\" E_OFF=\"1"
+  },
+  {
+    "clas":63,
+    "move":2,
+    "label":"LANGUAGE",
+    "name":"I-LANGUAGE"
+  },
+  {
+    "clas":64,
+    "move":2,
+    "label":"GPE\" E_OFF=\"2",
+    "name":"I-GPE\" E_OFF=\"2"
+  },
+  {
+    "clas":65,
+    "move":2,
+    "label":"ORG\" E_OFF=\"1",
+    "name":"I-ORG\" E_OFF=\"1"
+  },
+  {
+    "clas":66,
+    "move":3,
+    "label":"ORG",
+    "name":"L-ORG"
+  },
+  {
+    "clas":67,
+    "move":3,
+    "label":"WORK_OF_ART",
+    "name":"L-WORK_OF_ART"
+  },
+  {
+    "clas":68,
+    "move":3,
+    "label":"DATE",
+    "name":"L-DATE"
+  },
+  {
+    "clas":69,
+    "move":3,
+    "label":"GPE",
+    "name":"L-GPE"
+  },
+  {
+    "clas":70,
+    "move":3,
+    "label":"EVENT",
+    "name":"L-EVENT"
+  },
+  {
+    "clas":71,
+    "move":3,
+    "label":"NORP",
+    "name":"L-NORP"
+  },
+  {
+    "clas":72,
+    "move":3,
+    "label":"PERSON",
+    "name":"L-PERSON"
+  },
+  {
+    "clas":73,
+    "move":3,
+    "label":"MONEY",
+    "name":"L-MONEY"
+  },
+  {
+    "clas":74,
+    "move":3,
+    "label":"CARDINAL",
+    "name":"L-CARDINAL"
+  },
+  {
+    "clas":75,
+    "move":3,
+    "label":"ORDINAL",
+    "name":"L-ORDINAL"
+  },
+  {
+    "clas":76,
+    "move":3,
+    "label":"TIME",
+    "name":"L-TIME"
+  },
+  {
+    "clas":77,
+    "move":3,
+    "label":"CARDINAL\" E_OFF=\"1",
+    "name":"L-CARDINAL\" E_OFF=\"1"
+  },
+  {
+    "clas":78,
+    "move":3,
+    "label":"LOC",
+    "name":"L-LOC"
+  },
+  {
+    "clas":79,
+    "move":3,
+    "label":"ORDINAL\" E_OFF=\"1",
+    "name":"L-ORDINAL\" E_OFF=\"1"
+  },
+  {
+    "clas":80,
+    "move":3,
+    "label":"QUANTITY",
+    "name":"L-QUANTITY"
+  },
+  {
+    "clas":81,
+    "move":3,
+    "label":"PERCENT",
+    "name":"L-PERCENT"
+  },
+  {
+    "clas":82,
+    "move":3,
+    "label":"FAC",
+    "name":"L-FAC"
+  },
+  {
+    "clas":83,
+    "move":3,
+    "label":"NORP\" E_OFF=\"1",
+    "name":"L-NORP\" E_OFF=\"1"
+  },
+  {
+    "clas":84,
+    "move":3,
+    "label":"LAW",
+    "name":"L-LAW"
+  },
+  {
+    "clas":85,
+    "move":3,
+    "label":"CARDINAL\" E_OFF=\"2",
+    "name":"L-CARDINAL\" E_OFF=\"2"
+  },
+  {
+    "clas":86,
+    "move":3,
+    "label":"WORK_OF_ART\" E_OFF=\"1",
+    "name":"L-WORK_OF_ART\" E_OFF=\"1"
+  },
+  {
+    "clas":87,
+    "move":3,
+    "label":"FAC\" S_OFF=\"1",
+    "name":"L-FAC\" S_OFF=\"1"
+  },
+  {
+    "clas":88,
+    "move":3,
+    "label":"QUANTITY\" S_OFF=\"2\" E_OFF=\"4",
+    "name":"L-QUANTITY\" S_OFF=\"2\" E_OFF=\"4"
+  },
+  {
+    "clas":89,
+    "move":3,
+    "label":"QUANTITY\" S_OFF=\"2",
+    "name":"L-QUANTITY\" S_OFF=\"2"
+  },
+  {
+    "clas":90,
+    "move":3,
+    "label":"GPE\" S_OFF=\"1",
+    "name":"L-GPE\" S_OFF=\"1"
+  },
+  {
+    "clas":91,
+    "move":3,
+    "label":"DATE\" E_OFF=\"1",
+    "name":"L-DATE\" E_OFF=\"1"
+  },
+  {
+    "clas":92,
+    "move":3,
+    "label":"EVENT\" E_OFF=\"1",
+    "name":"L-EVENT\" E_OFF=\"1"
+  },
+  {
+    "clas":93,
+    "move":3,
+    "label":"NORP\" S_OFF=\"1",
+    "name":"L-NORP\" S_OFF=\"1"
+  },
+  {
+    "clas":94,
+    "move":3,
+    "label":"LOC\" E_OFF=\"1",
+    "name":"L-LOC\" E_OFF=\"1"
+  },
+  {
+    "clas":95,
+    "move":3,
+    "label":"GPE\" E_OFF=\"1",
+    "name":"L-GPE\" E_OFF=\"1"
+  },
+  {
+    "clas":96,
+    "move":3,
+    "label":"LANGUAGE",
+    "name":"L-LANGUAGE"
+  },
+  {
+    "clas":97,
+    "move":3,
+    "label":"GPE\" E_OFF=\"2",
+    "name":"L-GPE\" E_OFF=\"2"
+  },
+  {
+    "clas":98,
+    "move":3,
+    "label":"ORG\" E_OFF=\"1",
+    "name":"L-ORG\" E_OFF=\"1"
+  },
+  {
+    "clas":99,
+    "move":4,
+    "label":"ORG",
+    "name":"U-ORG"
+  },
+  {
+    "clas":100,
+    "move":4,
+    "label":"WORK_OF_ART",
+    "name":"U-WORK_OF_ART"
+  },
+  {
+    "clas":101,
+    "move":4,
+    "label":"DATE",
+    "name":"U-DATE"
+  },
+  {
+    "clas":102,
+    "move":4,
+    "label":"GPE",
+    "name":"U-GPE"
+  },
+  {
+    "clas":103,
+    "move":4,
+    "label":"EVENT",
+    "name":"U-EVENT"
+  },
+  {
+    "clas":104,
+    "move":4,
+    "label":"NORP",
+    "name":"U-NORP"
+  },
+  {
+    "clas":105,
+    "move":4,
+    "label":"PERSON",
+    "name":"U-PERSON"
+  },
+  {
+    "clas":106,
+    "move":4,
+    "label":"MONEY",
+    "name":"U-MONEY"
+  },
+  {
+    "clas":107,
+    "move":4,
+    "label":"CARDINAL",
+    "name":"U-CARDINAL"
+  },
+  {
+    "clas":108,
+    "move":4,
+    "label":"ORDINAL",
+    "name":"U-ORDINAL"
+  },
+  {
+    "clas":109,
+    "move":4,
+    "label":"TIME",
+    "name":"U-TIME"
+  },
+  {
+    "clas":110,
+    "move":4,
+    "label":"CARDINAL\" E_OFF=\"1",
+    "name":"U-CARDINAL\" E_OFF=\"1"
+  },
+  {
+    "clas":111,
+    "move":4,
+    "label":"LOC",
+    "name":"U-LOC"
+  },
+  {
+    "clas":112,
+    "move":4,
+    "label":"ORDINAL\" E_OFF=\"1",
+    "name":"U-ORDINAL\" E_OFF=\"1"
+  },
+  {
+    "clas":113,
+    "move":4,
+    "label":"QUANTITY",
+    "name":"U-QUANTITY"
+  },
+  {
+    "clas":114,
+    "move":4,
+    "label":"PERCENT",
+    "name":"U-PERCENT"
+  },
+  {
+    "clas":115,
+    "move":4,
+    "label":"FAC",
+    "name":"U-FAC"
+  },
+  {
+    "clas":116,
+    "move":4,
+    "label":"NORP\" E_OFF=\"1",
+    "name":"U-NORP\" E_OFF=\"1"
+  },
+  {
+    "clas":117,
+    "move":4,
+    "label":"LAW",
+    "name":"U-LAW"
+  },
+  {
+    "clas":118,
+    "move":4,
+    "label":"CARDINAL\" E_OFF=\"2",
+    "name":"U-CARDINAL\" E_OFF=\"2"
+  },
+  {
+    "clas":119,
+    "move":4,
+    "label":"WORK_OF_ART\" E_OFF=\"1",
+    "name":"U-WORK_OF_ART\" E_OFF=\"1"
+  },
+  {
+    "clas":120,
+    "move":4,
+    "label":"FAC\" S_OFF=\"1",
+    "name":"U-FAC\" S_OFF=\"1"
+  },
+  {
+    "clas":121,
+    "move":4,
+    "label":"QUANTITY\" S_OFF=\"2\" E_OFF=\"4",
+    "name":"U-QUANTITY\" S_OFF=\"2\" E_OFF=\"4"
+  },
+  {
+    "clas":122,
+    "move":4,
+    "label":"QUANTITY\" S_OFF=\"2",
+    "name":"U-QUANTITY\" S_OFF=\"2"
+  },
+  {
+    "clas":123,
+    "move":4,
+    "label":"GPE\" S_OFF=\"1",
+    "name":"U-GPE\" S_OFF=\"1"
+  },
+  {
+    "clas":124,
+    "move":4,
+    "label":"DATE\" E_OFF=\"1",
+    "name":"U-DATE\" E_OFF=\"1"
+  },
+  {
+    "clas":125,
+    "move":4,
+    "label":"EVENT\" E_OFF=\"1",
+    "name":"U-EVENT\" E_OFF=\"1"
+  },
+  {
+    "clas":126,
+    "move":4,
+    "label":"NORP\" S_OFF=\"1",
+    "name":"U-NORP\" S_OFF=\"1"
+  },
+  {
+    "clas":127,
+    "move":4,
+    "label":"LOC\" E_OFF=\"1",
+    "name":"U-LOC\" E_OFF=\"1"
+  },
+  {
+    "clas":128,
+    "move":4,
+    "label":"GPE\" E_OFF=\"1",
+    "name":"U-GPE\" E_OFF=\"1"
+  },
+  {
+    "clas":129,
+    "move":4,
+    "label":"LANGUAGE",
+    "name":"U-LANGUAGE"
+  },
+  {
+    "clas":130,
+    "move":4,
+    "label":"GPE\" E_OFF=\"2",
+    "name":"U-GPE\" E_OFF=\"2"
+  },
+  {
+    "clas":131,
+    "move":4,
+    "label":"ORG\" E_OFF=\"1",
+    "name":"U-ORG\" E_OFF=\"1"
+  },
+  {
+    "clas":132,
+    "move":5,
+    "label":"",
+    "name":"O"
+  }
+]

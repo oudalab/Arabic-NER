@@ -1,0 +1,656 @@
+Å´transitions⁄%ˆ[
+  {
+    "clas":0,
+    "move":1,
+    "label":"NORP",
+    "name":"B-NORP"
+  },
+  {
+    "clas":1,
+    "move":1,
+    "label":"ORG",
+    "name":"B-ORG"
+  },
+  {
+    "clas":2,
+    "move":1,
+    "label":"GPE",
+    "name":"B-GPE"
+  },
+  {
+    "clas":3,
+    "move":1,
+    "label":"LAW",
+    "name":"B-LAW"
+  },
+  {
+    "clas":4,
+    "move":1,
+    "label":"EVENT",
+    "name":"B-EVENT"
+  },
+  {
+    "clas":5,
+    "move":1,
+    "label":"LOC",
+    "name":"B-LOC"
+  },
+  {
+    "clas":6,
+    "move":1,
+    "label":"PERSON",
+    "name":"B-PERSON"
+  },
+  {
+    "clas":7,
+    "move":1,
+    "label":"ORDINAL",
+    "name":"B-ORDINAL"
+  },
+  {
+    "clas":8,
+    "move":1,
+    "label":"DATE",
+    "name":"B-DATE"
+  },
+  {
+    "clas":9,
+    "move":1,
+    "label":"CARDINAL",
+    "name":"B-CARDINAL"
+  },
+  {
+    "clas":10,
+    "move":1,
+    "label":"GPE\" S_OFF=\"1",
+    "name":"B-GPE\" S_OFF=\"1"
+  },
+  {
+    "clas":11,
+    "move":1,
+    "label":"TIME",
+    "name":"B-TIME"
+  },
+  {
+    "clas":12,
+    "move":1,
+    "label":"PERSON\" S_OFF=\"1",
+    "name":"B-PERSON\" S_OFF=\"1"
+  },
+  {
+    "clas":13,
+    "move":1,
+    "label":"WORK_OF_ART",
+    "name":"B-WORK_OF_ART"
+  },
+  {
+    "clas":14,
+    "move":1,
+    "label":"FAC",
+    "name":"B-FAC"
+  },
+  {
+    "clas":15,
+    "move":1,
+    "label":"MONEY",
+    "name":"B-MONEY"
+  },
+  {
+    "clas":16,
+    "move":1,
+    "label":"QUANTITY",
+    "name":"B-QUANTITY"
+  },
+  {
+    "clas":17,
+    "move":1,
+    "label":"PRODUCT",
+    "name":"B-PRODUCT"
+  },
+  {
+    "clas":18,
+    "move":1,
+    "label":"PERCENT",
+    "name":"B-PERCENT"
+  },
+  {
+    "clas":19,
+    "move":1,
+    "label":"GPE\" S_OFF=\"1\" E_OFF=\"1",
+    "name":"B-GPE\" S_OFF=\"1\" E_OFF=\"1"
+  },
+  {
+    "clas":20,
+    "move":1,
+    "label":"ORG\" E_OFF=\"2",
+    "name":"B-ORG\" E_OFF=\"2"
+  },
+  {
+    "clas":21,
+    "move":1,
+    "label":"PRODUCT\" S_OFF=\"1",
+    "name":"B-PRODUCT\" S_OFF=\"1"
+  },
+  {
+    "clas":22,
+    "move":1,
+    "label":"FAC\" S_OFF=\"1",
+    "name":"B-FAC\" S_OFF=\"1"
+  },
+  {
+    "clas":23,
+    "move":1,
+    "label":"LOC\" S_OFF=\"1",
+    "name":"B-LOC\" S_OFF=\"1"
+  },
+  {
+    "clas":24,
+    "move":1,
+    "label":"DATE\" E_OFF=\"1",
+    "name":"B-DATE\" E_OFF=\"1"
+  },
+  {
+    "clas":25,
+    "move":1,
+    "label":"ORG\" S_OFF=\"1",
+    "name":"B-ORG\" S_OFF=\"1"
+  },
+  {
+    "clas":26,
+    "move":1,
+    "label":"FAC\" E_OFF=\"2",
+    "name":"B-FAC\" E_OFF=\"2"
+  },
+  {
+    "clas":27,
+    "move":2,
+    "label":"NORP",
+    "name":"I-NORP"
+  },
+  {
+    "clas":28,
+    "move":2,
+    "label":"ORG",
+    "name":"I-ORG"
+  },
+  {
+    "clas":29,
+    "move":2,
+    "label":"GPE",
+    "name":"I-GPE"
+  },
+  {
+    "clas":30,
+    "move":2,
+    "label":"LAW",
+    "name":"I-LAW"
+  },
+  {
+    "clas":31,
+    "move":2,
+    "label":"EVENT",
+    "name":"I-EVENT"
+  },
+  {
+    "clas":32,
+    "move":2,
+    "label":"LOC",
+    "name":"I-LOC"
+  },
+  {
+    "clas":33,
+    "move":2,
+    "label":"PERSON",
+    "name":"I-PERSON"
+  },
+  {
+    "clas":34,
+    "move":2,
+    "label":"ORDINAL",
+    "name":"I-ORDINAL"
+  },
+  {
+    "clas":35,
+    "move":2,
+    "label":"DATE",
+    "name":"I-DATE"
+  },
+  {
+    "clas":36,
+    "move":2,
+    "label":"CARDINAL",
+    "name":"I-CARDINAL"
+  },
+  {
+    "clas":37,
+    "move":2,
+    "label":"GPE\" S_OFF=\"1",
+    "name":"I-GPE\" S_OFF=\"1"
+  },
+  {
+    "clas":38,
+    "move":2,
+    "label":"TIME",
+    "name":"I-TIME"
+  },
+  {
+    "clas":39,
+    "move":2,
+    "label":"PERSON\" S_OFF=\"1",
+    "name":"I-PERSON\" S_OFF=\"1"
+  },
+  {
+    "clas":40,
+    "move":2,
+    "label":"WORK_OF_ART",
+    "name":"I-WORK_OF_ART"
+  },
+  {
+    "clas":41,
+    "move":2,
+    "label":"FAC",
+    "name":"I-FAC"
+  },
+  {
+    "clas":42,
+    "move":2,
+    "label":"MONEY",
+    "name":"I-MONEY"
+  },
+  {
+    "clas":43,
+    "move":2,
+    "label":"QUANTITY",
+    "name":"I-QUANTITY"
+  },
+  {
+    "clas":44,
+    "move":2,
+    "label":"PRODUCT",
+    "name":"I-PRODUCT"
+  },
+  {
+    "clas":45,
+    "move":2,
+    "label":"PERCENT",
+    "name":"I-PERCENT"
+  },
+  {
+    "clas":46,
+    "move":2,
+    "label":"GPE\" S_OFF=\"1\" E_OFF=\"1",
+    "name":"I-GPE\" S_OFF=\"1\" E_OFF=\"1"
+  },
+  {
+    "clas":47,
+    "move":2,
+    "label":"ORG\" E_OFF=\"2",
+    "name":"I-ORG\" E_OFF=\"2"
+  },
+  {
+    "clas":48,
+    "move":2,
+    "label":"PRODUCT\" S_OFF=\"1",
+    "name":"I-PRODUCT\" S_OFF=\"1"
+  },
+  {
+    "clas":49,
+    "move":2,
+    "label":"FAC\" S_OFF=\"1",
+    "name":"I-FAC\" S_OFF=\"1"
+  },
+  {
+    "clas":50,
+    "move":2,
+    "label":"LOC\" S_OFF=\"1",
+    "name":"I-LOC\" S_OFF=\"1"
+  },
+  {
+    "clas":51,
+    "move":2,
+    "label":"DATE\" E_OFF=\"1",
+    "name":"I-DATE\" E_OFF=\"1"
+  },
+  {
+    "clas":52,
+    "move":2,
+    "label":"ORG\" S_OFF=\"1",
+    "name":"I-ORG\" S_OFF=\"1"
+  },
+  {
+    "clas":53,
+    "move":2,
+    "label":"FAC\" E_OFF=\"2",
+    "name":"I-FAC\" E_OFF=\"2"
+  },
+  {
+    "clas":54,
+    "move":3,
+    "label":"NORP",
+    "name":"L-NORP"
+  },
+  {
+    "clas":55,
+    "move":3,
+    "label":"ORG",
+    "name":"L-ORG"
+  },
+  {
+    "clas":56,
+    "move":3,
+    "label":"GPE",
+    "name":"L-GPE"
+  },
+  {
+    "clas":57,
+    "move":3,
+    "label":"LAW",
+    "name":"L-LAW"
+  },
+  {
+    "clas":58,
+    "move":3,
+    "label":"EVENT",
+    "name":"L-EVENT"
+  },
+  {
+    "clas":59,
+    "move":3,
+    "label":"LOC",
+    "name":"L-LOC"
+  },
+  {
+    "clas":60,
+    "move":3,
+    "label":"PERSON",
+    "name":"L-PERSON"
+  },
+  {
+    "clas":61,
+    "move":3,
+    "label":"ORDINAL",
+    "name":"L-ORDINAL"
+  },
+  {
+    "clas":62,
+    "move":3,
+    "label":"DATE",
+    "name":"L-DATE"
+  },
+  {
+    "clas":63,
+    "move":3,
+    "label":"CARDINAL",
+    "name":"L-CARDINAL"
+  },
+  {
+    "clas":64,
+    "move":3,
+    "label":"GPE\" S_OFF=\"1",
+    "name":"L-GPE\" S_OFF=\"1"
+  },
+  {
+    "clas":65,
+    "move":3,
+    "label":"TIME",
+    "name":"L-TIME"
+  },
+  {
+    "clas":66,
+    "move":3,
+    "label":"PERSON\" S_OFF=\"1",
+    "name":"L-PERSON\" S_OFF=\"1"
+  },
+  {
+    "clas":67,
+    "move":3,
+    "label":"WORK_OF_ART",
+    "name":"L-WORK_OF_ART"
+  },
+  {
+    "clas":68,
+    "move":3,
+    "label":"FAC",
+    "name":"L-FAC"
+  },
+  {
+    "clas":69,
+    "move":3,
+    "label":"MONEY",
+    "name":"L-MONEY"
+  },
+  {
+    "clas":70,
+    "move":3,
+    "label":"QUANTITY",
+    "name":"L-QUANTITY"
+  },
+  {
+    "clas":71,
+    "move":3,
+    "label":"PRODUCT",
+    "name":"L-PRODUCT"
+  },
+  {
+    "clas":72,
+    "move":3,
+    "label":"PERCENT",
+    "name":"L-PERCENT"
+  },
+  {
+    "clas":73,
+    "move":3,
+    "label":"GPE\" S_OFF=\"1\" E_OFF=\"1",
+    "name":"L-GPE\" S_OFF=\"1\" E_OFF=\"1"
+  },
+  {
+    "clas":74,
+    "move":3,
+    "label":"ORG\" E_OFF=\"2",
+    "name":"L-ORG\" E_OFF=\"2"
+  },
+  {
+    "clas":75,
+    "move":3,
+    "label":"PRODUCT\" S_OFF=\"1",
+    "name":"L-PRODUCT\" S_OFF=\"1"
+  },
+  {
+    "clas":76,
+    "move":3,
+    "label":"FAC\" S_OFF=\"1",
+    "name":"L-FAC\" S_OFF=\"1"
+  },
+  {
+    "clas":77,
+    "move":3,
+    "label":"LOC\" S_OFF=\"1",
+    "name":"L-LOC\" S_OFF=\"1"
+  },
+  {
+    "clas":78,
+    "move":3,
+    "label":"DATE\" E_OFF=\"1",
+    "name":"L-DATE\" E_OFF=\"1"
+  },
+  {
+    "clas":79,
+    "move":3,
+    "label":"ORG\" S_OFF=\"1",
+    "name":"L-ORG\" S_OFF=\"1"
+  },
+  {
+    "clas":80,
+    "move":3,
+    "label":"FAC\" E_OFF=\"2",
+    "name":"L-FAC\" E_OFF=\"2"
+  },
+  {
+    "clas":81,
+    "move":4,
+    "label":"NORP",
+    "name":"U-NORP"
+  },
+  {
+    "clas":82,
+    "move":4,
+    "label":"ORG",
+    "name":"U-ORG"
+  },
+  {
+    "clas":83,
+    "move":4,
+    "label":"GPE",
+    "name":"U-GPE"
+  },
+  {
+    "clas":84,
+    "move":4,
+    "label":"LAW",
+    "name":"U-LAW"
+  },
+  {
+    "clas":85,
+    "move":4,
+    "label":"EVENT",
+    "name":"U-EVENT"
+  },
+  {
+    "clas":86,
+    "move":4,
+    "label":"LOC",
+    "name":"U-LOC"
+  },
+  {
+    "clas":87,
+    "move":4,
+    "label":"PERSON",
+    "name":"U-PERSON"
+  },
+  {
+    "clas":88,
+    "move":4,
+    "label":"ORDINAL",
+    "name":"U-ORDINAL"
+  },
+  {
+    "clas":89,
+    "move":4,
+    "label":"DATE",
+    "name":"U-DATE"
+  },
+  {
+    "clas":90,
+    "move":4,
+    "label":"CARDINAL",
+    "name":"U-CARDINAL"
+  },
+  {
+    "clas":91,
+    "move":4,
+    "label":"GPE\" S_OFF=\"1",
+    "name":"U-GPE\" S_OFF=\"1"
+  },
+  {
+    "clas":92,
+    "move":4,
+    "label":"TIME",
+    "name":"U-TIME"
+  },
+  {
+    "clas":93,
+    "move":4,
+    "label":"PERSON\" S_OFF=\"1",
+    "name":"U-PERSON\" S_OFF=\"1"
+  },
+  {
+    "clas":94,
+    "move":4,
+    "label":"WORK_OF_ART",
+    "name":"U-WORK_OF_ART"
+  },
+  {
+    "clas":95,
+    "move":4,
+    "label":"FAC",
+    "name":"U-FAC"
+  },
+  {
+    "clas":96,
+    "move":4,
+    "label":"MONEY",
+    "name":"U-MONEY"
+  },
+  {
+    "clas":97,
+    "move":4,
+    "label":"QUANTITY",
+    "name":"U-QUANTITY"
+  },
+  {
+    "clas":98,
+    "move":4,
+    "label":"PRODUCT",
+    "name":"U-PRODUCT"
+  },
+  {
+    "clas":99,
+    "move":4,
+    "label":"PERCENT",
+    "name":"U-PERCENT"
+  },
+  {
+    "clas":100,
+    "move":4,
+    "label":"GPE\" S_OFF=\"1\" E_OFF=\"1",
+    "name":"U-GPE\" S_OFF=\"1\" E_OFF=\"1"
+  },
+  {
+    "clas":101,
+    "move":4,
+    "label":"ORG\" E_OFF=\"2",
+    "name":"U-ORG\" E_OFF=\"2"
+  },
+  {
+    "clas":102,
+    "move":4,
+    "label":"PRODUCT\" S_OFF=\"1",
+    "name":"U-PRODUCT\" S_OFF=\"1"
+  },
+  {
+    "clas":103,
+    "move":4,
+    "label":"FAC\" S_OFF=\"1",
+    "name":"U-FAC\" S_OFF=\"1"
+  },
+  {
+    "clas":104,
+    "move":4,
+    "label":"LOC\" S_OFF=\"1",
+    "name":"U-LOC\" S_OFF=\"1"
+  },
+  {
+    "clas":105,
+    "move":4,
+    "label":"DATE\" E_OFF=\"1",
+    "name":"U-DATE\" E_OFF=\"1"
+  },
+  {
+    "clas":106,
+    "move":4,
+    "label":"ORG\" S_OFF=\"1",
+    "name":"U-ORG\" S_OFF=\"1"
+  },
+  {
+    "clas":107,
+    "move":4,
+    "label":"FAC\" E_OFF=\"2",
+    "name":"U-FAC\" E_OFF=\"2"
+  },
+  {
+    "clas":108,
+    "move":5,
+    "label":"",
+    "name":"O"
+  }
+]
