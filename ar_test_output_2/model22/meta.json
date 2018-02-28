@@ -1,0 +1,28 @@
+{
+  "lang":"ar",
+  "name":"unnamed",
+  "pipeline":[
+    "ner"
+  ],
+  "accuracy":{
+    "uas":0.0,
+    "las":0.0,
+    "ents_p":53.6470588235,
+    "ents_r":39.2426850258,
+    "ents_f":45.3280318091,
+    "tags_acc":92.2385558687,
+    "token_acc":86.5618298785
+  },
+  "speed":{
+    "nwords":6995,
+    "cpu":18459.1615150154,
+    "gpu":null
+  },
+  "vectors":{
+    "width":0,
+    "vectors":0,
+    "keys":0
+  },
+  "spacy_version":">=2.0.9",
+  "version":"0.0.0"
+}
