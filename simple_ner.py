@@ -1,71 +1,102 @@
+#!/usr/bin/env python
+# coding: utf8
+"""Example of training spaCy's named entity recognizer, starting off with an
+existing model or a blank model.
+
+For more details, see the documentation:
+* Training: https://spacy.io/usage/training
+* NER: https://spacy.io/usage/linguistic-features#named-entities
+
+Compatible with: spaCy v2.0.0+
 """
-Simple script to convert OntoNotes 5.0 formatted `.name` files to the spaCy
-NER-only training format (https://github.com/explosion/spaCy/blob/master/examples/training/train_ner.py#L21)
-"""
-import json # for tuple support
+from __future__ import unicode_literals, print_function
+
 import plac
-import os
-import re
+import random
+from pathlib import Path
+import spacy
+import json
 
-def get_ner_files(onto_dir):
-    name_files = []
-    for dirpath, subdirs, files in os.walk(onto_dir):
-        for fname in files:
-            if bool(re.search(".name", fname)):
-                fn = os.path.join(dirpath, fname)
-                name_files.append(fn)
-    return name_files
-
-def split(text):
-    text = text.strip().split('\n')[1:-1]
-    return text
-
-def clean_ent(ent):
-    tag = re.findall('TYPE="(.+?)">', ent)[0]
-    text = re.findall('>(.+)', ent)[0]
-    text = re.sub("\$", "\$", text)
-    return (text, tag)
-
-def raw_text(text):
-    text = re.sub("<ENAMEX .+?>", "", text)
-    text = re.sub("</ENAMEX>", "", text)
-    return text
-
-def ent_position(ents, text):
-    spacy_ents = []
-    for ent in ents:
-        ma = re.search(ent[0], text)
-        ent_tup = (ma.start(), ma.end(), ent[1])
-        spacy_ents.append(ent_tup)
-    return spacy_ents
-
-def text_to_spacy(markup):
-    ents = re.findall("<ENAMEX(.+?)</ENAMEX>", markup)
-    ents = [clean_ent(ent) for ent in ents]
-    text = raw_text(markup)
-    spacy_ents = ent_position(ents, text)
-    final = (text, {"entities" : spacy_ents})
-    return final
 
 @plac.annotations(
-    onto_dir=("Directory of OntoNotes data to traverse", "option", "i", str),
-    output=("File to write spaCy NER JSON out to", "option", "o", str))
-def main(onto_dir, output):
-    fns = get_ner_files(onto_dir)
-    all_annotations = []
-    for fn in fns:
-        with open(fn, "r") as f:
-            markup_doc = f.read()
-            markup_list = split(markup_doc)
-            for markup in markup_list:
-                try:
-                    ents = text_to_spacy(markup)
-                    all_annotations.append(ents)
-                except Exception:
-                    print(markup)
-    #print(all_annotations)
-    with open(output, "w") as f:
-        json.dump(all_annotations, f)
+    train_file=("File with training data (JSON)", "option", "i", str),
+    eval_file=("File with evaluation data (JSON)", "option", "e", str),
+    model=("Model name. Defaults to blank 'en' model.", "option", "m", str),
+    output_dir=("Optional output directory", "option", "o", Path),
+    n_iter=("Number of training iterations", "option", "n", int))
+def main(train_file, eval_file, model=None, output_dir=None, n_iter=100):
+    """Load the model, set up the pipeline and train the entity recognizer."""
+    if model is not None:
+        nlp = spacy.load(model)  # load existing spaCy model
+        print("Loaded model '%s'" % model)
+    else:
+        nlp = spacy.blank('en')  # create blank Language class
+        print("Created blank 'en' model")
 
-if __name__ == "__main__":
+    with open(train_file, "r") as f:
+        train_data = json.load(f)
+    with open(eval_file, "r") as f:
+        eval_data = json.load(f)
+   # create the built-in pipeline components and add them to the pipeline
+    # nlp.create_pipe works for built-ins that are registered with spaCy
+    if 'ner' not in nlp.pipe_names:
+        ner = nlp.create_pipe('ner')
+        nlp.add_pipe(ner, last=True)
+    # otherwise, get it so we can add labels
+    else:
+        ner = nlp.get_pipe('ner')
+
+    # add labels
+    for _, annotations in train_data:
+        for ent in annotations.get('entities'):
+            ner.add_label(ent[2])
+
+    # get names of other pipes to disable them during training
+    other_pipes = [pipe for pipe in nlp.pipe_names if pipe != 'ner']
+    with nlp.disable_pipes(*other_pipes):  # only train NER
+        optimizer = nlp.begin_training()
+        for itn in range(n_iter):
+            random.shuffle(train_data)
+            losses = {}
+            for text, annotations in train_data:
+                nlp.update(
+                    [text],  # batch of texts
+                    [annotations],  # batch of annotations
+                    drop=0.5,  # dropout - make it harder to memorise data
+                    sgd=optimizer,  # callable to update weights
+                    losses=losses)
+            print(losses)
+
+    # test the trained model
+    for text, _ in train_data:
+        doc = nlp(text)
+        print('Entities', [(ent.text, ent.label_) for ent in doc.ents])
+        print('Tokens', [(t.text, t.ent_type_, t.ent_iob) for t in doc])
+
+    # save model to output directory
+    if output_dir is not None:
+        output_dir = Path(output_dir)
+        if not output_dir.exists():
+            output_dir.mkdir()
+        nlp.to_disk(output_dir)
+        print("Saved model to", output_dir)
+
+        # test the saved model
+        print("Loading from", output_dir)
+        nlp2 = spacy.load(output_dir)
+        for text, _ in eval_data:
+            doc = nlp2(text)
+            print('Entities', [(ent.text, ent.label_) for ent in doc.ents])
+            print('Tokens', [(t.text, t.ent_type_, t.ent_iob) for t in doc])
+
+
+if __name__ == '__main__':
     plac.call(main)
+
+    # Expected output:
+    # Entities [('Shaka Khan', 'PERSON')]
+    # Tokens [('Who', '', 2), ('is', '', 2), ('Shaka', 'PERSON', 3),
+    # ('Khan', 'PERSON', 1), ('?', '', 2)]
+    # Entities [('London', 'LOC'), ('Berlin', 'LOC')]
+    # Tokens [('I', '', 2), ('like', '', 2), ('London', 'LOC', 3),
+    # ('and', '', 2), ('Berlin', 'LOC', 3), ('.', '', 2)]
