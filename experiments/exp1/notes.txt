@@ -1,0 +1,6 @@
+#Data:
+LDC data only
+
+#Performance:
+_loss', 'tag_loss', 'uas', 'tags_acc', 'token_acc', 'ents_p', 'ents_r', 'ents_f', 'cpu_wps', 'gpu_wps'
+29, 0.000, 11.698, 0.000, 58.589, 49.871, 53.880, 91.894, 85.899, 15363.7, 0.0

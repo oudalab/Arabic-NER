@@ -1,0 +1,2 @@
+#!/bin/bash
+git rm -r --cached ./data/ar_eval_all.json ./data/ar_train_all.json ./data/combined.json

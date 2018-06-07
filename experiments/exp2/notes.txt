@@ -1,1 +1,6 @@
-This experiment is trained by combine LDC ontonotes data and ANERCorp data
+#Data:
+LDC+ANERCorp data so for all the tokens in ANERCorp I put it one doc , so the doc now is 401+1=402
+we have 150k tokens tagged in ANERCorp but 88% are 'O' tokens which is useless, that why after we combined the data,
+our tag accuracy get decreased a little bit. (eval_data still ldc_eval)
+#Performance:
+29	0.000	11.407	0.000	58.158	50.018	53.782	91.894	85.899	6835.0	0.0

@@ -1,4 +1,4 @@
-/home/yan/arabicNER/Arabic-NER/data/ar_eval_all.json
-/home/yan/arabicNER/Arabic-NER/data/ar_train_all.json
-/home/yan/arabicNER/Arabic-NER/data/combined.json
+./data/ar_eval_all.json
+./data/ar_train_all.json
+./data/combined.json
 
