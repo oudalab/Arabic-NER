@@ -1,0 +1,8 @@
+#DATA:
+LDC+ANERCORP
+
+#MODEL:
+using pretrained fasttext Arabic embedding
+
+#PERFORMANCE
+
