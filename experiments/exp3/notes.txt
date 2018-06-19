@@ -4,5 +4,9 @@ LDC+ANERCORP
 #MODEL:
 using pretrained fasttext Arabic embedding
 
-#PERFORMANCE
+#COMMADN to train the model on hanover:
+python3 -m spacy train ar /home/yan/arabicNER/Arabic-NER/experiments/exp3/ar_output_all /home/yan/arabicNER/nerdata/combined.json /home/yan/arabicNER/nerdata/ar_eval_all.json --no-tagger --no-parser --vectors "/tmp/ar_vectors_wiki_lg"
+
+#PERFORMANCE:
+
 
