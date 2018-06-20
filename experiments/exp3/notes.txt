@@ -8,5 +8,9 @@ using pretrained fasttext Arabic embedding
 python3 -m spacy train ar /home/yan/arabicNER/Arabic-NER/experiments/exp3/ar_output_all /home/yan/arabicNER/nerdata/combined.json /home/yan/arabicNER/nerdata/ar_eval_all.json --no-tagger --no-parser --vectors "/tmp/ar_vectors_wiki_lg"
 
 #PERFORMANCE:
+if n=30, here is the result:
+29	0.000	10.027	0.000	56.598	51.344	53.843	91.894	85.899	13987.00.0
+
+if n=10 here is the result:
 
 
