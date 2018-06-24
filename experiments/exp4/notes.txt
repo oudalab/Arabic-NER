@@ -1,0 +1,25 @@
+#MODEL:
+using pretrained embedding from fasttext
+
+#COMMAND:(the model saved will be not pushed to github since it is way too big"
+python3 -m spacy train ar /home/yan/arabicNER/experiments/exp4/ar_output_all /home/yan/arabicNER/nerdata/combined_cleaned.json /home/yan/arabicNER/nerdata/ar_eval_all_cleaned.json --no-tagger --no-parser --vectors "/tmp/ar_vectors_wiki_lg"
+
+#PERFORMANCE:
+2	0.000	3576.740	0.000	57.569	54.770	56.134	91.894	85.899	12697.2	0.0
+
+3	0.000	2675.165	0.000	58.210	54.843	56.476	91.894	85.899	26226.3	0.0
+
+4	0.000	1174.187	0.000	57.969	54.659	56.265	91.894	85.899	26292.4	0.0
+
+5	0.000	982.009	0.000	57.313	54.991	56.128	91.894	85.899	13804.8	0.0
+
+6	0.000	523.781	0.000	57.736	54.291	55.961	91.894	85.899	13239.8	0.0
+
+7	0.000	453.901	0.000	58.100	54.291	56.131	91.894	85.899	13914.8	0.0
+
+8	0.000	275.748	0.000	58.406	54.254	56.254	91.894	85.899	15447.2	0.0
+
+9	0.000	234.566	0.000	57.323	53.628	55.414	91.894	85.899	25882.6	0.0
+
+10	0.000	169.124	0.000	56.791	54.365	55.551	91.894	85.899	26600.8	0.0
+
