@@ -24,3 +24,24 @@ Use it like this:(if you customozied build the model for me is v2.0.9 , the diff
 ```
 python -m spacy train ar /Users/yanliang/arabicNer/data/ar_output_all /Users/yanliang/arabicNer/data/ar_train_all.json /Users/yanliang/arabicNer/data/ar_eval_all.json --no-tagger --no-parser```
 ```
+
+## Rehearsing OntoNotes to prevent forgetting
+
+`rehearsal.py` is a script that generates a new Prodigy dataset containing both
+NER labeled examples from a given dataset, as well as a number of OntoNotes
+examples per annotation. Mixing in old gold standard annotations prevents
+catastrophic forgetting.
+
+For example, the following will augment the annotations in the `loc_ner_db`
+dataset with OntoNotes annotations:
+
+`python rehearsal.py "loc_ner_db" 5`
+
+The augmented data is written to a dataset called `augmented_for_training`,
+which should be treated as temporary because the script overwrites it each
+time. NER training can then be performed as usual:
+
+```
+prodigy ner.batch-train augmented_for_training en_core_web_sm --eval-split 0.2 
+```
+

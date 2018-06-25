@@ -1,4 +1,7 @@
 ./data/ar_eval_all.json
 ./data/ar_train_all.json
 ./data/combined.json
-
+*.json
+*.jsonl
+.ipynb_checkpoints/*
+.DS_Store

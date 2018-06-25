@@ -1,5 +1,3 @@
-import spacy
-nlp = spacy.blank("xx")
 from tqdm import tqdm
 import random
 import plac
@@ -126,9 +124,18 @@ def onto_to_prodigy_complete(sent):
     return prod
 
 @plac.annotations(
-    dataset=("Name of dataset with Prodigy annotated NER.", "option", "i", str),
-    multiplier=("Number of OntoNotes annotation to add per newly collected annotation (5?).", "option", "m", int))
+    dataset=("Name of dataset with Prodigy annotated NER.", "positional", None, str),
+    multiplier=("Number of OntoNotes annotation to add per newly collected annotation (5?).","positional", None, int),
+    onto_dir=("Location of OntoNotes directory", "positional", None, str))
 def main(dataset, multiplier, onto_dir="ontonotes-release-5.0/data/english/annotations/"):
+    """
+    Mix in OntoNotes NER annotations with new NER annotations from Prodigy to avoid the catatrophic forgetting problem.
+
+    Given a Prodigy dataset with new NER annotations, create a new dataset ('augmented_for_training') that also
+    includes OntoNotes NER sentences mixed in. `prodigy ner.batch-train` can then be called on this dataset
+    to learn on the new annotations without forgetting the old.
+    See here for more information on the catastrophic forgetting problem: https://explosion.ai/blog/pseudo-rehearsal-catastrophic-forgetting
+    """
     print("Reading OntoNotes")
     raw_annotations = dir_to_raw(onto_dir)
     print("Converting to spaCy spans...")
@@ -153,7 +160,7 @@ def main(dataset, multiplier, onto_dir="ontonotes-release-5.0/data/english/annot
     if exs:
         db.drop_dataset("augmented_for_training")
     db.add_examples(both, ["augmented_for_training"])
-    print("Wrote examples to 'augmented_for_training'. Use 'ner.batch-train' on that dataset.")
+    print("Wrote examples to the Prodigy dataset 'augmented_for_training'. Use 'ner.batch-train' on that dataset.")
 
 if __name__ == "__main__":
     plac.call(main)
