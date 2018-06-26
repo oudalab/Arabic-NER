@@ -126,8 +126,9 @@ def onto_to_prodigy_complete(sent):
 @plac.annotations(
     dataset=("Name of dataset with Prodigy annotated NER.", "positional", None, str),
     multiplier=("Number of OntoNotes annotation to add per newly collected annotation (5?).","positional", None, int),
+    split=("Should 20 percent of annotated and Onto data be pulled off for eval?", "flag", "s"),
     onto_dir=("Location of OntoNotes directory", "positional", None, str))
-def main(dataset, multiplier, onto_dir="ontonotes-release-5.0/data/english/annotations/"):
+def main(dataset, multiplier, split, onto_dir="ontonotes-release-5.0/data/english/annotations/"):
     """
     Mix in OntoNotes NER annotations with new NER annotations from Prodigy to avoid the catatrophic forgetting problem.
 
@@ -148,10 +149,17 @@ def main(dataset, multiplier, onto_dir="ontonotes-release-5.0/data/english/annot
     # get Prodigy annotations
     db = connect()
     annot = db.get_dataset(dataset)
+    random.shuffle(annot)
     print("Found {0} annotations in {1}".format(len(annot), dataset))
     # Get the examples to augment
-    augment = all_onto[0:multiplier * len(annot)]
-    print("Augmenting existing examples with {0} OntoNotes sentences".format(len(augment)))
+    aug_num = multiplier * len(annot)
+    print("Augmenting existing examples with {0} OntoNotes sentences".format(aug_num))
+    augment = all_onto[0:aug_num]
+    if split:
+        cutpoint = round(len(annot) * 0.2)
+        eval_prod = annot[0:cutpoint]
+        annot = annot[cutpoint:]
+        eval_onto = all_onto[aug_num:aug_num + 5*cutpoint]
     both = augment + annot
     random.shuffle(both)
     # use a hardcoded rehearsal dataset because we're dropping and don't want
@@ -161,6 +169,16 @@ def main(dataset, multiplier, onto_dir="ontonotes-release-5.0/data/english/annot
         db.drop_dataset("augmented_for_training")
     db.add_examples(both, ["augmented_for_training"])
     print("Wrote examples to the Prodigy dataset 'augmented_for_training'. Use 'ner.batch-train' on that dataset.")
+    if split:
+        eo = db.get_dataset("onto_for_eval")
+        if eo:
+            db.drop_dataset("onto_for_eval")
+        ep = db.get_dataset("prodigy_for_eval")
+        if ep:
+            db.drop_dataset("prodigy_for_eval")
+        db.add_examples(eval_onto, ["onto_for_eval"])
+        db.add_examples(eval_prod, ["prodigy_for_eval"])
+        print("Wrote eval examples to `prodigy_for_eval` and `onto_for_eval`")
 
 if __name__ == "__main__":
     plac.call(main)
