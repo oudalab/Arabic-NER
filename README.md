@@ -45,3 +45,24 @@ time. NER training can then be performed as usual:
 prodigy ner.batch-train augmented_for_training en_core_web_sm --eval-split 0.2 
 ```
 
+## Steps using onto_notes data mixed in the prodigy data and use prodigy to train.
+First of all, if you don't have prodigy on your local, you need to install it, and create a db (sqlite by default) for where to import your prodigy data:
+### create sqlite db through prodigy
+```
+python3 -m prodigy dataset arabicner "train arabic ner"
+```
+### import jsonl data that you exported from the prodigy app:
+```
+python3 -m prodigy db-in arabicner single_arabic_ner.jsonl 
+```
+### reheasal your dataset with onto_notes, the dir for onto_notes data is hard coded in rehearsal.py, you need to edit from there (5 here means that 5* onto_notes many records will be mixed in prodigy data)
+```
+python3 rehearsal.py "arabicner" 5
+```
+### Last train your data with the following command:
+```
+python3 -m prodigy ner.batch-train augmented_for_training /home/yan/arabicner/Arabic-NER/testmodel/model8 --eval-split 0.2
+```
+
+
+
