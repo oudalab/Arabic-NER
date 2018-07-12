@@ -64,5 +64,8 @@ python3 rehearsal.py "arabicner" 5
 python3 -m prodigy ner.batch-train augmented_for_training /home/yan/arabicner/Arabic-NER/testmodel/model8 --eval-split 0.2
 ```
 
-
+### Remark:
+if you want to explore the sqlitedb for prodigy, you need to go to your home directory
+and do sqlite3 .prodigy/prodigy.db
+it has "dataset", "example", "link" tables, and your data will be under example table.
 
