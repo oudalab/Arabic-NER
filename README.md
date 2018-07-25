@@ -69,3 +69,19 @@ if you want to explore the sqlitedb for prodigy, you need to go to your home dir
 and do sqlite3 .prodigy/prodigy.db
 it has "dataset", "example", "link" tables, and your data will be under example table.
 
+### the pretrained vector model could be too big for the training process to process, so we can prune the huge vector first then use it
+```
+python3 generatePruningVectorModel.py -l ar -v 0.0.0
+(version is needed for later training, since it iwll look at that field), the directory of the .vec is hard coded in the code
+```
+then you will get a language model with a pretrained pruned vectors, then you use this model to train you ner model with this command.
+```
+python3 -m spacy train ar /home/yan/arabicNER/Arabic-NER/experiments/exp2/ar_output_all /home/yan/arabicNER/Arabic-NER/data/combined.json /home/yan/arabicNER/Arabic-NER/data/ar_eval_all.json --no-tagger --no-parser --vectors "/the_model_you_just_got"
+```
+after that you will get several ner model as output and say model0 , if you make the training now with this command ,
+```
+python3 -m prodigy ner.batch-train augmented_for_training /nermodel --eval-split 0.2
+```
+spacy will throw error, it does  not like the /vocab defined in this ner model. but what I did is inside of ner model. it has a ner directory, you can copy this ner directory to the pruned-language model, and then update its meta.json under the directory, then make prodigy ner.batch-train looking at the language model (add in ner directory and udpated meta.json)
+it will succesfully run in this way.
+
