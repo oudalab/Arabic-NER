@@ -82,6 +82,7 @@ after that you will get several ner model as output and say model0 , if you make
 ```
 python3 -m prodigy ner.batch-train augmented_for_training /nermodel --eval-split 0.2
 ```
-spacy will throw error, it does  not like the /vocab defined in this ner model. but what I did is inside of ner model. it has a ner directory, you can copy this ner directory to the pruned-language model, and then update its meta.json under the directory, then make prodigy ner.batch-train looking at the language model (add in ner directory and udpated meta.json)
+spacy will throw error, it does  not like the /vocab defined in this ner model. it throws exception.
+but what I did is inside of ner model. it has a ner directory, you can copy this ner directory to the pruned-language model, and then update its meta.json under the directory, then make prodigy ner.batch-train looking at the language model (add in ner directory and udpated meta.json)
 it will succesfully run in this way.
 
