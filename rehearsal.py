@@ -3,9 +3,47 @@ import random
 import plac
 import os
 import re
+import json
 from prodigy import set_hashes
 from prodigy.components.db import connect
 
+#update the labels in LDC to our standard used in prodigy labeled data.
+def update_ldc_labels(data):
+    for d in data:
+        if(len(d["spans"])==0):
+            continue;
+        label=d["spans"][0]["label"]
+        if(label=='PERSON" S_OFF="1'):
+            d["spans"][0]["label"]="PERSON"
+        elif(label=="PERSON"):
+            continue;
+        elif(label== 'GPE" S_OFF="1'):
+            d["spans"][0]["label"]="GPE"
+        elif(label=='ORG" E_OFF="1'):
+            d["spans"][0]["label"]="ORG"
+        elif(label=='ORG" S_OFF="1'):
+            d["spans"][0]["label"]="ORG"
+        elif(label=='ORG'):
+            continue;
+        elif(label=="GPE"):
+            continue;
+        elif(label=="FAC" or label=="LOC"):
+            d["spans"][0]["label"]="GPE"
+        else:
+            d["spans"][0]["label"]="MISC"
+#validate the labels are what we are looking for
+def getlabelset(data):
+    labelset={}
+    for d in data:
+        if(len(d["spans"])>0):
+            la=d["spans"][0]["label"]
+        else:
+            continue
+        if(la in labelset):
+            labelset[la]=labelset[la]+1
+        else:
+            labelset[la]=1
+    return labelset
 
 def get_root_filename(onto_dir):
     name_files = []
@@ -128,7 +166,7 @@ def onto_to_prodigy_complete(sent):
     multiplier=("Number of OntoNotes annotation to add per newly collected annotation (5?).","positional", None, int),
     split=("Should 20 percent of annotated and Onto data be pulled off for eval?", "flag", "s"),
     onto_dir=("Location of OntoNotes directory", "positional", None, str))
-def main(dataset, multiplier, split, onto_dir="ontonotes-release-5.0/data/english/annotations/"):
+def main(dataset, multiplier, split, onto_dir="/home/yan/ontonotes-release-5.0/data/files/data/arabic/annotations"):
     """
     Mix in OntoNotes NER annotations with new NER annotations from Prodigy to avoid the catatrophic forgetting problem.
 
@@ -145,6 +183,8 @@ def main(dataset, multiplier, split, onto_dir="ontonotes-release-5.0/data/englis
         for s in i['paragraphs'][0]['sentences']:
             all_onto.append(onto_to_prodigy_complete(s))
     all_onto = list(set_hashes(eg) for eg in all_onto)
+    print("length all_onto")
+    print(len(all_onto))
     random.shuffle(all_onto)
     # get Prodigy annotations
     db = connect()
@@ -154,21 +194,31 @@ def main(dataset, multiplier, split, onto_dir="ontonotes-release-5.0/data/englis
     # Get the examples to augment
     aug_num = multiplier * len(annot)
     print("Augmenting existing examples with {0} OntoNotes sentences".format(aug_num))
+    #with open("allonto.json","w") as outfile:
+     #   json.dump(all_onto,outfile)
     augment = all_onto[0:aug_num]
+    update_ldc_labels(augment)
+    print("label set for augmented data:");
+    getlabelset(augment)
     if split:
         cutpoint = round(len(annot) * 0.2)
         eval_prod = annot[0:cutpoint]
         annot = annot[cutpoint:]
         eval_onto = all_onto[aug_num:aug_num + 5*cutpoint]
-    both = augment + annot
+    #both = augment + annot
+    both=augment+all_onto
+    #both=all_onto
+    print("length for both")
+    print(len(both))
     random.shuffle(both)
     # use a hardcoded rehearsal dataset because we're dropping and don't want
     # to take user input here. If it exists, drop it so we can refresh it.
-    exs = db.get_dataset("augmented_for_training")
+    datasetname="augmented_for_training"
+    exs = db.get_dataset(datasetname)
     if exs:
-        db.drop_dataset("augmented_for_training")
-    db.add_examples(both, ["augmented_for_training"])
-    print("Wrote examples to the Prodigy dataset 'augmented_for_training'. Use 'ner.batch-train' on that dataset.")
+        db.drop_dataset(datasetname)
+    db.add_examples(both, [datasetname])
+    print("Wrote examples to the Prodigy dataset "+datasetname+" . Use 'ner.batch-train' on that dataset.")
     if split:
         eo = db.get_dataset("onto_for_eval")
         if eo:
