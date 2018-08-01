@@ -57,6 +57,7 @@ def getlabelset(data):
             labelset[la]=labelset[la]+1
         else:
             labelset[la]=1
+    print(labelset)
     return labelset
 
 def get_root_filename(onto_dir):
