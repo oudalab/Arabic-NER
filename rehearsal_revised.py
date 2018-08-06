@@ -437,7 +437,7 @@ def main(dataset, multiplier, split, onto_dir="/home/yan/ontonotes-release-5.0/d
     for data in newaugment:
         if(data['spans'][0]['label']=="" or data['spans'][0]['label']=="MISC"):
             continue
-        augment.add(data)
+        augment.append(data)
     getlabelset(augment)
     if split:
         cutpoint = round(len(annot) * 0.2)
