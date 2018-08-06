@@ -435,7 +435,7 @@ def main(dataset, multiplier, split, onto_dir="/home/yan/ontonotes-release-5.0/d
     print("label set for augmented data:");
     augment=[];
     for data in newaugment:
-        if(data[0]['spans'][0]['label']=="" or data[0]['spans'][0]['label']=="MISC"):
+        if(data['spans'][0]['label']=="" or data['spans'][0]['label']=="MISC"):
             continue
         augment.add(data)
     getlabelset(augment)
