@@ -1,0 +1,16 @@
+{
+  "beam_width":1,
+  "beam_density":0.0,
+  "cnn_maxout_pieces":3,
+  "deprecation_fixes":{
+    "vectors_name":"spacy_pretrained_vectors"
+  },
+  "maxout_pieces":2,
+  "hist_width":0,
+  "pretrained_vectors":null,
+  "hist_size":0,
+  "hidden_width":200,
+  "nr_class":217,
+  "hidden_depth":1,
+  "token_vector_width":128
+}

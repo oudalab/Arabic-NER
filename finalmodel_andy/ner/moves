@@ -1,0 +1,1304 @@
+Å´transitions⁄R*[
+  {
+    "clas":0,
+    "move":1,
+    "label":"PERSON",
+    "name":"B-PERSON"
+  },
+  {
+    "clas":1,
+    "move":1,
+    "label":"DATE",
+    "name":"B-DATE"
+  },
+  {
+    "clas":2,
+    "move":1,
+    "label":"ORG",
+    "name":"B-ORG"
+  },
+  {
+    "clas":3,
+    "move":1,
+    "label":"NORP",
+    "name":"B-NORP"
+  },
+  {
+    "clas":4,
+    "move":1,
+    "label":"ORDINAL",
+    "name":"B-ORDINAL"
+  },
+  {
+    "clas":5,
+    "move":1,
+    "label":"GPE",
+    "name":"B-GPE"
+  },
+  {
+    "clas":6,
+    "move":1,
+    "label":"FAC",
+    "name":"B-FAC"
+  },
+  {
+    "clas":7,
+    "move":1,
+    "label":"CARDINAL",
+    "name":"B-CARDINAL"
+  },
+  {
+    "clas":8,
+    "move":1,
+    "label":"PERSON\" S_OFF=\"1",
+    "name":"B-PERSON\" S_OFF=\"1"
+  },
+  {
+    "clas":9,
+    "move":1,
+    "label":"PERCENT",
+    "name":"B-PERCENT"
+  },
+  {
+    "clas":10,
+    "move":1,
+    "label":"LOC",
+    "name":"B-LOC"
+  },
+  {
+    "clas":11,
+    "move":1,
+    "label":"MONEY",
+    "name":"B-MONEY"
+  },
+  {
+    "clas":12,
+    "move":1,
+    "label":"CARDINAL\" E_OFF=\"1",
+    "name":"B-CARDINAL\" E_OFF=\"1"
+  },
+  {
+    "clas":13,
+    "move":1,
+    "label":"PRODUCT",
+    "name":"B-PRODUCT"
+  },
+  {
+    "clas":14,
+    "move":1,
+    "label":"QUANTITY",
+    "name":"B-QUANTITY"
+  },
+  {
+    "clas":15,
+    "move":1,
+    "label":"EVENT",
+    "name":"B-EVENT"
+  },
+  {
+    "clas":16,
+    "move":1,
+    "label":"DATE\" E_OFF=\"1",
+    "name":"B-DATE\" E_OFF=\"1"
+  },
+  {
+    "clas":17,
+    "move":1,
+    "label":"TIME",
+    "name":"B-TIME"
+  },
+  {
+    "clas":18,
+    "move":1,
+    "label":"LAW",
+    "name":"B-LAW"
+  },
+  {
+    "clas":19,
+    "move":1,
+    "label":"WORK_OF_ART",
+    "name":"B-WORK_OF_ART"
+  },
+  {
+    "clas":20,
+    "move":1,
+    "label":"ORG\" E_OFF=\"2",
+    "name":"B-ORG\" E_OFF=\"2"
+  },
+  {
+    "clas":21,
+    "move":1,
+    "label":"GPE\" S_OFF=\"1",
+    "name":"B-GPE\" S_OFF=\"1"
+  },
+  {
+    "clas":22,
+    "move":1,
+    "label":"ORG\" S_OFF=\"1",
+    "name":"B-ORG\" S_OFF=\"1"
+  },
+  {
+    "clas":23,
+    "move":1,
+    "label":"ORG\" E_OFF=\"1",
+    "name":"B-ORG\" E_OFF=\"1"
+  },
+  {
+    "clas":24,
+    "move":1,
+    "label":"PERSON\" E_OFF=\"2",
+    "name":"B-PERSON\" E_OFF=\"2"
+  },
+  {
+    "clas":25,
+    "move":1,
+    "label":"ORG\" S_OFF=\"1\" E_OFF=\"1",
+    "name":"B-ORG\" S_OFF=\"1\" E_OFF=\"1"
+  },
+  {
+    "clas":26,
+    "move":1,
+    "label":"TIME\" E_OFF=\"1",
+    "name":"B-TIME\" E_OFF=\"1"
+  },
+  {
+    "clas":27,
+    "move":1,
+    "label":"LANGUAGE",
+    "name":"B-LANGUAGE"
+  },
+  {
+    "clas":28,
+    "move":1,
+    "label":"DATE\" E_OFF=\"5",
+    "name":"B-DATE\" E_OFF=\"5"
+  },
+  {
+    "clas":29,
+    "move":1,
+    "label":"GPE\" S_OFF=\"1\" E_OFF=\"1",
+    "name":"B-GPE\" S_OFF=\"1\" E_OFF=\"1"
+  },
+  {
+    "clas":30,
+    "move":1,
+    "label":"FAC\" E_OFF=\"2",
+    "name":"B-FAC\" E_OFF=\"2"
+  },
+  {
+    "clas":31,
+    "move":1,
+    "label":"NORP\" E_OFF=\"2",
+    "name":"B-NORP\" E_OFF=\"2"
+  },
+  {
+    "clas":32,
+    "move":1,
+    "label":"PRODUCT\" E_OFF=\"1",
+    "name":"B-PRODUCT\" E_OFF=\"1"
+  },
+  {
+    "clas":33,
+    "move":1,
+    "label":"QUANTITY\" E_OFF=\"1",
+    "name":"B-QUANTITY\" E_OFF=\"1"
+  },
+  {
+    "clas":34,
+    "move":1,
+    "label":"QUANTITY\" E_OFF=\"2",
+    "name":"B-QUANTITY\" E_OFF=\"2"
+  },
+  {
+    "clas":35,
+    "move":1,
+    "label":"QUANTITY\" S_OFF=\"2",
+    "name":"B-QUANTITY\" S_OFF=\"2"
+  },
+  {
+    "clas":36,
+    "move":1,
+    "label":"ORDINAL\" E_OFF=\"3",
+    "name":"B-ORDINAL\" E_OFF=\"3"
+  },
+  {
+    "clas":37,
+    "move":1,
+    "label":"FAC\" S_OFF=\"1",
+    "name":"B-FAC\" S_OFF=\"1"
+  },
+  {
+    "clas":38,
+    "move":1,
+    "label":"ORDINAL\" E_OFF=\"1",
+    "name":"B-ORDINAL\" E_OFF=\"1"
+  },
+  {
+    "clas":39,
+    "move":1,
+    "label":"PERSON\" S_OFF=\"1\" E_OFF=\"1",
+    "name":"B-PERSON\" S_OFF=\"1\" E_OFF=\"1"
+  },
+  {
+    "clas":40,
+    "move":1,
+    "label":"LOC\" S_OFF=\"1",
+    "name":"B-LOC\" S_OFF=\"1"
+  },
+  {
+    "clas":41,
+    "move":1,
+    "label":"GPE\" E_OFF=\"1",
+    "name":"B-GPE\" E_OFF=\"1"
+  },
+  {
+    "clas":42,
+    "move":1,
+    "label":"DATE\" S_OFF=\"1",
+    "name":"B-DATE\" S_OFF=\"1"
+  },
+  {
+    "clas":43,
+    "move":1,
+    "label":"GPE\" E_OFF=\"2",
+    "name":"B-GPE\" E_OFF=\"2"
+  },
+  {
+    "clas":44,
+    "move":1,
+    "label":"QUANTITY\" E_OFF=\"3",
+    "name":"B-QUANTITY\" E_OFF=\"3"
+  },
+  {
+    "clas":45,
+    "move":1,
+    "label":"CARDINAL\" E_OFF=\"3",
+    "name":"B-CARDINAL\" E_OFF=\"3"
+  },
+  {
+    "clas":46,
+    "move":1,
+    "label":"NORP\" S_OFF=\"1",
+    "name":"B-NORP\" S_OFF=\"1"
+  },
+  {
+    "clas":47,
+    "move":1,
+    "label":"NORP\" S_OFF=\"2",
+    "name":"B-NORP\" S_OFF=\"2"
+  },
+  {
+    "clas":48,
+    "move":1,
+    "label":"PERSON\" S_OFF=\"1\" E_OFF=\"2",
+    "name":"B-PERSON\" S_OFF=\"1\" E_OFF=\"2"
+  },
+  {
+    "clas":49,
+    "move":1,
+    "label":"PRODUCT\" S_OFF=\"1",
+    "name":"B-PRODUCT\" S_OFF=\"1"
+  },
+  {
+    "clas":50,
+    "move":1,
+    "label":"GPE\" E_OFF=\"4",
+    "name":"B-GPE\" E_OFF=\"4"
+  },
+  {
+    "clas":51,
+    "move":1,
+    "label":"ts",
+    "name":"B-ts"
+  },
+  {
+    "clas":52,
+    "move":1,
+    "label":"PERS",
+    "name":"B-PERS"
+  },
+  {
+    "clas":53,
+    "move":1,
+    "label":"MISC",
+    "name":"B-MISC"
+  },
+  {
+    "clas":54,
+    "move":2,
+    "label":"PERSON",
+    "name":"I-PERSON"
+  },
+  {
+    "clas":55,
+    "move":2,
+    "label":"DATE",
+    "name":"I-DATE"
+  },
+  {
+    "clas":56,
+    "move":2,
+    "label":"ORG",
+    "name":"I-ORG"
+  },
+  {
+    "clas":57,
+    "move":2,
+    "label":"NORP",
+    "name":"I-NORP"
+  },
+  {
+    "clas":58,
+    "move":2,
+    "label":"ORDINAL",
+    "name":"I-ORDINAL"
+  },
+  {
+    "clas":59,
+    "move":2,
+    "label":"GPE",
+    "name":"I-GPE"
+  },
+  {
+    "clas":60,
+    "move":2,
+    "label":"FAC",
+    "name":"I-FAC"
+  },
+  {
+    "clas":61,
+    "move":2,
+    "label":"CARDINAL",
+    "name":"I-CARDINAL"
+  },
+  {
+    "clas":62,
+    "move":2,
+    "label":"PERSON\" S_OFF=\"1",
+    "name":"I-PERSON\" S_OFF=\"1"
+  },
+  {
+    "clas":63,
+    "move":2,
+    "label":"PERCENT",
+    "name":"I-PERCENT"
+  },
+  {
+    "clas":64,
+    "move":2,
+    "label":"LOC",
+    "name":"I-LOC"
+  },
+  {
+    "clas":65,
+    "move":2,
+    "label":"MONEY",
+    "name":"I-MONEY"
+  },
+  {
+    "clas":66,
+    "move":2,
+    "label":"CARDINAL\" E_OFF=\"1",
+    "name":"I-CARDINAL\" E_OFF=\"1"
+  },
+  {
+    "clas":67,
+    "move":2,
+    "label":"PRODUCT",
+    "name":"I-PRODUCT"
+  },
+  {
+    "clas":68,
+    "move":2,
+    "label":"QUANTITY",
+    "name":"I-QUANTITY"
+  },
+  {
+    "clas":69,
+    "move":2,
+    "label":"EVENT",
+    "name":"I-EVENT"
+  },
+  {
+    "clas":70,
+    "move":2,
+    "label":"DATE\" E_OFF=\"1",
+    "name":"I-DATE\" E_OFF=\"1"
+  },
+  {
+    "clas":71,
+    "move":2,
+    "label":"TIME",
+    "name":"I-TIME"
+  },
+  {
+    "clas":72,
+    "move":2,
+    "label":"LAW",
+    "name":"I-LAW"
+  },
+  {
+    "clas":73,
+    "move":2,
+    "label":"WORK_OF_ART",
+    "name":"I-WORK_OF_ART"
+  },
+  {
+    "clas":74,
+    "move":2,
+    "label":"ORG\" E_OFF=\"2",
+    "name":"I-ORG\" E_OFF=\"2"
+  },
+  {
+    "clas":75,
+    "move":2,
+    "label":"GPE\" S_OFF=\"1",
+    "name":"I-GPE\" S_OFF=\"1"
+  },
+  {
+    "clas":76,
+    "move":2,
+    "label":"ORG\" S_OFF=\"1",
+    "name":"I-ORG\" S_OFF=\"1"
+  },
+  {
+    "clas":77,
+    "move":2,
+    "label":"ORG\" E_OFF=\"1",
+    "name":"I-ORG\" E_OFF=\"1"
+  },
+  {
+    "clas":78,
+    "move":2,
+    "label":"PERSON\" E_OFF=\"2",
+    "name":"I-PERSON\" E_OFF=\"2"
+  },
+  {
+    "clas":79,
+    "move":2,
+    "label":"ORG\" S_OFF=\"1\" E_OFF=\"1",
+    "name":"I-ORG\" S_OFF=\"1\" E_OFF=\"1"
+  },
+  {
+    "clas":80,
+    "move":2,
+    "label":"TIME\" E_OFF=\"1",
+    "name":"I-TIME\" E_OFF=\"1"
+  },
+  {
+    "clas":81,
+    "move":2,
+    "label":"LANGUAGE",
+    "name":"I-LANGUAGE"
+  },
+  {
+    "clas":82,
+    "move":2,
+    "label":"DATE\" E_OFF=\"5",
+    "name":"I-DATE\" E_OFF=\"5"
+  },
+  {
+    "clas":83,
+    "move":2,
+    "label":"GPE\" S_OFF=\"1\" E_OFF=\"1",
+    "name":"I-GPE\" S_OFF=\"1\" E_OFF=\"1"
+  },
+  {
+    "clas":84,
+    "move":2,
+    "label":"FAC\" E_OFF=\"2",
+    "name":"I-FAC\" E_OFF=\"2"
+  },
+  {
+    "clas":85,
+    "move":2,
+    "label":"NORP\" E_OFF=\"2",
+    "name":"I-NORP\" E_OFF=\"2"
+  },
+  {
+    "clas":86,
+    "move":2,
+    "label":"PRODUCT\" E_OFF=\"1",
+    "name":"I-PRODUCT\" E_OFF=\"1"
+  },
+  {
+    "clas":87,
+    "move":2,
+    "label":"QUANTITY\" E_OFF=\"1",
+    "name":"I-QUANTITY\" E_OFF=\"1"
+  },
+  {
+    "clas":88,
+    "move":2,
+    "label":"QUANTITY\" E_OFF=\"2",
+    "name":"I-QUANTITY\" E_OFF=\"2"
+  },
+  {
+    "clas":89,
+    "move":2,
+    "label":"QUANTITY\" S_OFF=\"2",
+    "name":"I-QUANTITY\" S_OFF=\"2"
+  },
+  {
+    "clas":90,
+    "move":2,
+    "label":"ORDINAL\" E_OFF=\"3",
+    "name":"I-ORDINAL\" E_OFF=\"3"
+  },
+  {
+    "clas":91,
+    "move":2,
+    "label":"FAC\" S_OFF=\"1",
+    "name":"I-FAC\" S_OFF=\"1"
+  },
+  {
+    "clas":92,
+    "move":2,
+    "label":"ORDINAL\" E_OFF=\"1",
+    "name":"I-ORDINAL\" E_OFF=\"1"
+  },
+  {
+    "clas":93,
+    "move":2,
+    "label":"PERSON\" S_OFF=\"1\" E_OFF=\"1",
+    "name":"I-PERSON\" S_OFF=\"1\" E_OFF=\"1"
+  },
+  {
+    "clas":94,
+    "move":2,
+    "label":"LOC\" S_OFF=\"1",
+    "name":"I-LOC\" S_OFF=\"1"
+  },
+  {
+    "clas":95,
+    "move":2,
+    "label":"GPE\" E_OFF=\"1",
+    "name":"I-GPE\" E_OFF=\"1"
+  },
+  {
+    "clas":96,
+    "move":2,
+    "label":"DATE\" S_OFF=\"1",
+    "name":"I-DATE\" S_OFF=\"1"
+  },
+  {
+    "clas":97,
+    "move":2,
+    "label":"GPE\" E_OFF=\"2",
+    "name":"I-GPE\" E_OFF=\"2"
+  },
+  {
+    "clas":98,
+    "move":2,
+    "label":"QUANTITY\" E_OFF=\"3",
+    "name":"I-QUANTITY\" E_OFF=\"3"
+  },
+  {
+    "clas":99,
+    "move":2,
+    "label":"CARDINAL\" E_OFF=\"3",
+    "name":"I-CARDINAL\" E_OFF=\"3"
+  },
+  {
+    "clas":100,
+    "move":2,
+    "label":"NORP\" S_OFF=\"1",
+    "name":"I-NORP\" S_OFF=\"1"
+  },
+  {
+    "clas":101,
+    "move":2,
+    "label":"NORP\" S_OFF=\"2",
+    "name":"I-NORP\" S_OFF=\"2"
+  },
+  {
+    "clas":102,
+    "move":2,
+    "label":"PERSON\" S_OFF=\"1\" E_OFF=\"2",
+    "name":"I-PERSON\" S_OFF=\"1\" E_OFF=\"2"
+  },
+  {
+    "clas":103,
+    "move":2,
+    "label":"PRODUCT\" S_OFF=\"1",
+    "name":"I-PRODUCT\" S_OFF=\"1"
+  },
+  {
+    "clas":104,
+    "move":2,
+    "label":"GPE\" E_OFF=\"4",
+    "name":"I-GPE\" E_OFF=\"4"
+  },
+  {
+    "clas":105,
+    "move":2,
+    "label":"ts",
+    "name":"I-ts"
+  },
+  {
+    "clas":106,
+    "move":2,
+    "label":"PERS",
+    "name":"I-PERS"
+  },
+  {
+    "clas":107,
+    "move":2,
+    "label":"MISC",
+    "name":"I-MISC"
+  },
+  {
+    "clas":108,
+    "move":3,
+    "label":"PERSON",
+    "name":"L-PERSON"
+  },
+  {
+    "clas":109,
+    "move":3,
+    "label":"DATE",
+    "name":"L-DATE"
+  },
+  {
+    "clas":110,
+    "move":3,
+    "label":"ORG",
+    "name":"L-ORG"
+  },
+  {
+    "clas":111,
+    "move":3,
+    "label":"NORP",
+    "name":"L-NORP"
+  },
+  {
+    "clas":112,
+    "move":3,
+    "label":"ORDINAL",
+    "name":"L-ORDINAL"
+  },
+  {
+    "clas":113,
+    "move":3,
+    "label":"GPE",
+    "name":"L-GPE"
+  },
+  {
+    "clas":114,
+    "move":3,
+    "label":"FAC",
+    "name":"L-FAC"
+  },
+  {
+    "clas":115,
+    "move":3,
+    "label":"CARDINAL",
+    "name":"L-CARDINAL"
+  },
+  {
+    "clas":116,
+    "move":3,
+    "label":"PERSON\" S_OFF=\"1",
+    "name":"L-PERSON\" S_OFF=\"1"
+  },
+  {
+    "clas":117,
+    "move":3,
+    "label":"PERCENT",
+    "name":"L-PERCENT"
+  },
+  {
+    "clas":118,
+    "move":3,
+    "label":"LOC",
+    "name":"L-LOC"
+  },
+  {
+    "clas":119,
+    "move":3,
+    "label":"MONEY",
+    "name":"L-MONEY"
+  },
+  {
+    "clas":120,
+    "move":3,
+    "label":"CARDINAL\" E_OFF=\"1",
+    "name":"L-CARDINAL\" E_OFF=\"1"
+  },
+  {
+    "clas":121,
+    "move":3,
+    "label":"PRODUCT",
+    "name":"L-PRODUCT"
+  },
+  {
+    "clas":122,
+    "move":3,
+    "label":"QUANTITY",
+    "name":"L-QUANTITY"
+  },
+  {
+    "clas":123,
+    "move":3,
+    "label":"EVENT",
+    "name":"L-EVENT"
+  },
+  {
+    "clas":124,
+    "move":3,
+    "label":"DATE\" E_OFF=\"1",
+    "name":"L-DATE\" E_OFF=\"1"
+  },
+  {
+    "clas":125,
+    "move":3,
+    "label":"TIME",
+    "name":"L-TIME"
+  },
+  {
+    "clas":126,
+    "move":3,
+    "label":"LAW",
+    "name":"L-LAW"
+  },
+  {
+    "clas":127,
+    "move":3,
+    "label":"WORK_OF_ART",
+    "name":"L-WORK_OF_ART"
+  },
+  {
+    "clas":128,
+    "move":3,
+    "label":"ORG\" E_OFF=\"2",
+    "name":"L-ORG\" E_OFF=\"2"
+  },
+  {
+    "clas":129,
+    "move":3,
+    "label":"GPE\" S_OFF=\"1",
+    "name":"L-GPE\" S_OFF=\"1"
+  },
+  {
+    "clas":130,
+    "move":3,
+    "label":"ORG\" S_OFF=\"1",
+    "name":"L-ORG\" S_OFF=\"1"
+  },
+  {
+    "clas":131,
+    "move":3,
+    "label":"ORG\" E_OFF=\"1",
+    "name":"L-ORG\" E_OFF=\"1"
+  },
+  {
+    "clas":132,
+    "move":3,
+    "label":"PERSON\" E_OFF=\"2",
+    "name":"L-PERSON\" E_OFF=\"2"
+  },
+  {
+    "clas":133,
+    "move":3,
+    "label":"ORG\" S_OFF=\"1\" E_OFF=\"1",
+    "name":"L-ORG\" S_OFF=\"1\" E_OFF=\"1"
+  },
+  {
+    "clas":134,
+    "move":3,
+    "label":"TIME\" E_OFF=\"1",
+    "name":"L-TIME\" E_OFF=\"1"
+  },
+  {
+    "clas":135,
+    "move":3,
+    "label":"LANGUAGE",
+    "name":"L-LANGUAGE"
+  },
+  {
+    "clas":136,
+    "move":3,
+    "label":"DATE\" E_OFF=\"5",
+    "name":"L-DATE\" E_OFF=\"5"
+  },
+  {
+    "clas":137,
+    "move":3,
+    "label":"GPE\" S_OFF=\"1\" E_OFF=\"1",
+    "name":"L-GPE\" S_OFF=\"1\" E_OFF=\"1"
+  },
+  {
+    "clas":138,
+    "move":3,
+    "label":"FAC\" E_OFF=\"2",
+    "name":"L-FAC\" E_OFF=\"2"
+  },
+  {
+    "clas":139,
+    "move":3,
+    "label":"NORP\" E_OFF=\"2",
+    "name":"L-NORP\" E_OFF=\"2"
+  },
+  {
+    "clas":140,
+    "move":3,
+    "label":"PRODUCT\" E_OFF=\"1",
+    "name":"L-PRODUCT\" E_OFF=\"1"
+  },
+  {
+    "clas":141,
+    "move":3,
+    "label":"QUANTITY\" E_OFF=\"1",
+    "name":"L-QUANTITY\" E_OFF=\"1"
+  },
+  {
+    "clas":142,
+    "move":3,
+    "label":"QUANTITY\" E_OFF=\"2",
+    "name":"L-QUANTITY\" E_OFF=\"2"
+  },
+  {
+    "clas":143,
+    "move":3,
+    "label":"QUANTITY\" S_OFF=\"2",
+    "name":"L-QUANTITY\" S_OFF=\"2"
+  },
+  {
+    "clas":144,
+    "move":3,
+    "label":"ORDINAL\" E_OFF=\"3",
+    "name":"L-ORDINAL\" E_OFF=\"3"
+  },
+  {
+    "clas":145,
+    "move":3,
+    "label":"FAC\" S_OFF=\"1",
+    "name":"L-FAC\" S_OFF=\"1"
+  },
+  {
+    "clas":146,
+    "move":3,
+    "label":"ORDINAL\" E_OFF=\"1",
+    "name":"L-ORDINAL\" E_OFF=\"1"
+  },
+  {
+    "clas":147,
+    "move":3,
+    "label":"PERSON\" S_OFF=\"1\" E_OFF=\"1",
+    "name":"L-PERSON\" S_OFF=\"1\" E_OFF=\"1"
+  },
+  {
+    "clas":148,
+    "move":3,
+    "label":"LOC\" S_OFF=\"1",
+    "name":"L-LOC\" S_OFF=\"1"
+  },
+  {
+    "clas":149,
+    "move":3,
+    "label":"GPE\" E_OFF=\"1",
+    "name":"L-GPE\" E_OFF=\"1"
+  },
+  {
+    "clas":150,
+    "move":3,
+    "label":"DATE\" S_OFF=\"1",
+    "name":"L-DATE\" S_OFF=\"1"
+  },
+  {
+    "clas":151,
+    "move":3,
+    "label":"GPE\" E_OFF=\"2",
+    "name":"L-GPE\" E_OFF=\"2"
+  },
+  {
+    "clas":152,
+    "move":3,
+    "label":"QUANTITY\" E_OFF=\"3",
+    "name":"L-QUANTITY\" E_OFF=\"3"
+  },
+  {
+    "clas":153,
+    "move":3,
+    "label":"CARDINAL\" E_OFF=\"3",
+    "name":"L-CARDINAL\" E_OFF=\"3"
+  },
+  {
+    "clas":154,
+    "move":3,
+    "label":"NORP\" S_OFF=\"1",
+    "name":"L-NORP\" S_OFF=\"1"
+  },
+  {
+    "clas":155,
+    "move":3,
+    "label":"NORP\" S_OFF=\"2",
+    "name":"L-NORP\" S_OFF=\"2"
+  },
+  {
+    "clas":156,
+    "move":3,
+    "label":"PERSON\" S_OFF=\"1\" E_OFF=\"2",
+    "name":"L-PERSON\" S_OFF=\"1\" E_OFF=\"2"
+  },
+  {
+    "clas":157,
+    "move":3,
+    "label":"PRODUCT\" S_OFF=\"1",
+    "name":"L-PRODUCT\" S_OFF=\"1"
+  },
+  {
+    "clas":158,
+    "move":3,
+    "label":"GPE\" E_OFF=\"4",
+    "name":"L-GPE\" E_OFF=\"4"
+  },
+  {
+    "clas":159,
+    "move":3,
+    "label":"ts",
+    "name":"L-ts"
+  },
+  {
+    "clas":160,
+    "move":3,
+    "label":"PERS",
+    "name":"L-PERS"
+  },
+  {
+    "clas":161,
+    "move":3,
+    "label":"MISC",
+    "name":"L-MISC"
+  },
+  {
+    "clas":162,
+    "move":4,
+    "label":"PERSON",
+    "name":"U-PERSON"
+  },
+  {
+    "clas":163,
+    "move":4,
+    "label":"DATE",
+    "name":"U-DATE"
+  },
+  {
+    "clas":164,
+    "move":4,
+    "label":"ORG",
+    "name":"U-ORG"
+  },
+  {
+    "clas":165,
+    "move":4,
+    "label":"NORP",
+    "name":"U-NORP"
+  },
+  {
+    "clas":166,
+    "move":4,
+    "label":"ORDINAL",
+    "name":"U-ORDINAL"
+  },
+  {
+    "clas":167,
+    "move":4,
+    "label":"GPE",
+    "name":"U-GPE"
+  },
+  {
+    "clas":168,
+    "move":4,
+    "label":"FAC",
+    "name":"U-FAC"
+  },
+  {
+    "clas":169,
+    "move":4,
+    "label":"CARDINAL",
+    "name":"U-CARDINAL"
+  },
+  {
+    "clas":170,
+    "move":4,
+    "label":"PERSON\" S_OFF=\"1",
+    "name":"U-PERSON\" S_OFF=\"1"
+  },
+  {
+    "clas":171,
+    "move":4,
+    "label":"PERCENT",
+    "name":"U-PERCENT"
+  },
+  {
+    "clas":172,
+    "move":4,
+    "label":"LOC",
+    "name":"U-LOC"
+  },
+  {
+    "clas":173,
+    "move":4,
+    "label":"MONEY",
+    "name":"U-MONEY"
+  },
+  {
+    "clas":174,
+    "move":4,
+    "label":"CARDINAL\" E_OFF=\"1",
+    "name":"U-CARDINAL\" E_OFF=\"1"
+  },
+  {
+    "clas":175,
+    "move":4,
+    "label":"PRODUCT",
+    "name":"U-PRODUCT"
+  },
+  {
+    "clas":176,
+    "move":4,
+    "label":"QUANTITY",
+    "name":"U-QUANTITY"
+  },
+  {
+    "clas":177,
+    "move":4,
+    "label":"EVENT",
+    "name":"U-EVENT"
+  },
+  {
+    "clas":178,
+    "move":4,
+    "label":"DATE\" E_OFF=\"1",
+    "name":"U-DATE\" E_OFF=\"1"
+  },
+  {
+    "clas":179,
+    "move":4,
+    "label":"TIME",
+    "name":"U-TIME"
+  },
+  {
+    "clas":180,
+    "move":4,
+    "label":"LAW",
+    "name":"U-LAW"
+  },
+  {
+    "clas":181,
+    "move":4,
+    "label":"WORK_OF_ART",
+    "name":"U-WORK_OF_ART"
+  },
+  {
+    "clas":182,
+    "move":4,
+    "label":"ORG\" E_OFF=\"2",
+    "name":"U-ORG\" E_OFF=\"2"
+  },
+  {
+    "clas":183,
+    "move":4,
+    "label":"GPE\" S_OFF=\"1",
+    "name":"U-GPE\" S_OFF=\"1"
+  },
+  {
+    "clas":184,
+    "move":4,
+    "label":"ORG\" S_OFF=\"1",
+    "name":"U-ORG\" S_OFF=\"1"
+  },
+  {
+    "clas":185,
+    "move":4,
+    "label":"ORG\" E_OFF=\"1",
+    "name":"U-ORG\" E_OFF=\"1"
+  },
+  {
+    "clas":186,
+    "move":4,
+    "label":"PERSON\" E_OFF=\"2",
+    "name":"U-PERSON\" E_OFF=\"2"
+  },
+  {
+    "clas":187,
+    "move":4,
+    "label":"ORG\" S_OFF=\"1\" E_OFF=\"1",
+    "name":"U-ORG\" S_OFF=\"1\" E_OFF=\"1"
+  },
+  {
+    "clas":188,
+    "move":4,
+    "label":"TIME\" E_OFF=\"1",
+    "name":"U-TIME\" E_OFF=\"1"
+  },
+  {
+    "clas":189,
+    "move":4,
+    "label":"LANGUAGE",
+    "name":"U-LANGUAGE"
+  },
+  {
+    "clas":190,
+    "move":4,
+    "label":"DATE\" E_OFF=\"5",
+    "name":"U-DATE\" E_OFF=\"5"
+  },
+  {
+    "clas":191,
+    "move":4,
+    "label":"GPE\" S_OFF=\"1\" E_OFF=\"1",
+    "name":"U-GPE\" S_OFF=\"1\" E_OFF=\"1"
+  },
+  {
+    "clas":192,
+    "move":4,
+    "label":"FAC\" E_OFF=\"2",
+    "name":"U-FAC\" E_OFF=\"2"
+  },
+  {
+    "clas":193,
+    "move":4,
+    "label":"NORP\" E_OFF=\"2",
+    "name":"U-NORP\" E_OFF=\"2"
+  },
+  {
+    "clas":194,
+    "move":4,
+    "label":"PRODUCT\" E_OFF=\"1",
+    "name":"U-PRODUCT\" E_OFF=\"1"
+  },
+  {
+    "clas":195,
+    "move":4,
+    "label":"QUANTITY\" E_OFF=\"1",
+    "name":"U-QUANTITY\" E_OFF=\"1"
+  },
+  {
+    "clas":196,
+    "move":4,
+    "label":"QUANTITY\" E_OFF=\"2",
+    "name":"U-QUANTITY\" E_OFF=\"2"
+  },
+  {
+    "clas":197,
+    "move":4,
+    "label":"QUANTITY\" S_OFF=\"2",
+    "name":"U-QUANTITY\" S_OFF=\"2"
+  },
+  {
+    "clas":198,
+    "move":4,
+    "label":"ORDINAL\" E_OFF=\"3",
+    "name":"U-ORDINAL\" E_OFF=\"3"
+  },
+  {
+    "clas":199,
+    "move":4,
+    "label":"FAC\" S_OFF=\"1",
+    "name":"U-FAC\" S_OFF=\"1"
+  },
+  {
+    "clas":200,
+    "move":4,
+    "label":"ORDINAL\" E_OFF=\"1",
+    "name":"U-ORDINAL\" E_OFF=\"1"
+  },
+  {
+    "clas":201,
+    "move":4,
+    "label":"PERSON\" S_OFF=\"1\" E_OFF=\"1",
+    "name":"U-PERSON\" S_OFF=\"1\" E_OFF=\"1"
+  },
+  {
+    "clas":202,
+    "move":4,
+    "label":"LOC\" S_OFF=\"1",
+    "name":"U-LOC\" S_OFF=\"1"
+  },
+  {
+    "clas":203,
+    "move":4,
+    "label":"GPE\" E_OFF=\"1",
+    "name":"U-GPE\" E_OFF=\"1"
+  },
+  {
+    "clas":204,
+    "move":4,
+    "label":"DATE\" S_OFF=\"1",
+    "name":"U-DATE\" S_OFF=\"1"
+  },
+  {
+    "clas":205,
+    "move":4,
+    "label":"GPE\" E_OFF=\"2",
+    "name":"U-GPE\" E_OFF=\"2"
+  },
+  {
+    "clas":206,
+    "move":4,
+    "label":"QUANTITY\" E_OFF=\"3",
+    "name":"U-QUANTITY\" E_OFF=\"3"
+  },
+  {
+    "clas":207,
+    "move":4,
+    "label":"CARDINAL\" E_OFF=\"3",
+    "name":"U-CARDINAL\" E_OFF=\"3"
+  },
+  {
+    "clas":208,
+    "move":4,
+    "label":"NORP\" S_OFF=\"1",
+    "name":"U-NORP\" S_OFF=\"1"
+  },
+  {
+    "clas":209,
+    "move":4,
+    "label":"NORP\" S_OFF=\"2",
+    "name":"U-NORP\" S_OFF=\"2"
+  },
+  {
+    "clas":210,
+    "move":4,
+    "label":"PERSON\" S_OFF=\"1\" E_OFF=\"2",
+    "name":"U-PERSON\" S_OFF=\"1\" E_OFF=\"2"
+  },
+  {
+    "clas":211,
+    "move":4,
+    "label":"PRODUCT\" S_OFF=\"1",
+    "name":"U-PRODUCT\" S_OFF=\"1"
+  },
+  {
+    "clas":212,
+    "move":4,
+    "label":"GPE\" E_OFF=\"4",
+    "name":"U-GPE\" E_OFF=\"4"
+  },
+  {
+    "clas":213,
+    "move":4,
+    "label":"ts",
+    "name":"U-ts"
+  },
+  {
+    "clas":214,
+    "move":4,
+    "label":"PERS",
+    "name":"U-PERS"
+  },
+  {
+    "clas":215,
+    "move":4,
+    "label":"MISC",
+    "name":"U-MISC"
+  },
+  {
+    "clas":216,
+    "move":5,
+    "label":"",
+    "name":"O"
+  }
+]
